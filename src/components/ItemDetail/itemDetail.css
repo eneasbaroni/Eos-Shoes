@@ -1,0 +1,159 @@
+.imgGrande {
+  display: flex;
+  height: 100vh;
+  padding: 5rem;
+  object-fit: contain;
+}
+
+.productDetailName {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.productDetailPrice {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  text-align: right;
+  color: black;
+}
+
+.itemDetailTitle {  
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  border-top: solid grey 1px;  
+}
+
+.coloresContain {
+  display: flex; 
+  justify-content: flex-start;    
+}
+
+.selectColor {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tallesContain {
+  display: flex; 
+  justify-content: flex-start;    
+}
+
+.itemDetalle {
+  text-align: left;
+  padding-top: 1rem;  
+  height: calc(100vh - 565px);
+  overflow: auto;  
+  font-size: 0.95rem;
+  color: rgb(58, 58, 58);
+}
+
+.imgMiniContainer {
+  border-top: solid grey 1px;  
+  display: flex;   
+  right: 3rem;  
+}
+
+.imgMini {  
+  display: inline;
+  object-fit: cover;  
+  height: 100px;
+  width: 100px !important;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: solid grey 1px;
+  cursor: pointer;
+}
+
+  /* Media Querys */
+
+@media (max-width: 1400px) {
+  .imgGrande {    
+    padding: 2rem;        
+  }
+
+  .productDetailName {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  } 
+  .productDetailPrice {
+    margin-top: 1rem;    
+  }
+  .itemDetailTitle {  
+    font-size: 0.95rem;    
+  }
+
+  .selectColor {
+    height: 1rem;
+    width: 1rem;    
+  }
+   
+  .imgMini {      
+    height: 70px;
+    width: 70px !important;
+  }
+  .itemDetalle {    
+    padding-top: 0.5rem; 
+    height: calc(100vh - 380px); 
+  }
+  
+}
+
+@media (max-width: 992px) {
+
+  .itemDetalle {    
+    padding-top: 0.5rem; 
+    height: calc(100vh - 380px - 4rem); 
+  }
+
+  .imgMiniContainer {
+    border-top: solid grey 1px;
+    width: calc(50% - 3rem) ; 
+    display: flex;    
+    right: 3rem;
+    position: absolute;    
+  }
+
+  .imgGrande {    
+    height: calc(100vh - 4rem);    
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .imgGrande {
+    display: flex;
+    height: 30vh;
+    padding: 0rem;
+    object-fit: contain;
+  }
+
+  .itemDetalle {        
+    height: auto; 
+  }
+
+  .imgMiniContainer {    
+    border-top: solid grey 1px;   
+    right: 3rem;
+    width: calc(100% - 1rem);  
+    margin-left: 0.5rem;
+    display: flex;     
+    left: 0;  
+    padding-bottom: 0.7rem;
+  } 
+  
+}
+
+
+
+
+  

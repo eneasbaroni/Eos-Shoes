@@ -1,0 +1,49 @@
+.itemDetailContainer {
+  display: flex;  
+  min-height: 100vh;
+  background-color: white;    
+  transition: all 0.5s ease-in-out;
+}
+
+.closeDetail {
+  position: fixed;
+  z-index: 300;
+  top: 1rem;
+  right: 3rem;
+  text-align: right;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;  
+}
+
+@media (max-width: 1400px) {  
+  .closeDetail {    
+    top: 0.9rem;
+    right: 0.9rem;     
+  }  
+}
+
+@media (max-width: 992px) {
+  .itemDetailContainer {
+    padding-top: 4rem;
+    height: auto;
+  }
+
+  .closeDetail {    
+    top: 4rem;
+    right: 0.9rem;     
+  }  
+
+}
+
+@media (max-width: 576px) {
+
+  .itemDetailContainer {
+    padding-top: 6rem;    
+  }
+
+  .closeDetail {    
+    top: 6rem;         
+  } 
+
+}

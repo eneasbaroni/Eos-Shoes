@@ -1,0 +1,5 @@
+.cartCont {
+    min-height: calc(100vh - 4rem);
+    align-items: flex-start;
+    padding-bottom: 2rem;
+}

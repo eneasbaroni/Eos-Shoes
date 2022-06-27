@@ -1,0 +1,22 @@
+.talleButton {
+    border: solid grey 1px;
+    border-radius: 0;
+    background-color: white;
+    padding: 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .talleButtonActive {
+    border: solid #d51920 1px;
+    border-radius: 0;
+    background-color: #d51920;
+    color: white;
+    padding: 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }

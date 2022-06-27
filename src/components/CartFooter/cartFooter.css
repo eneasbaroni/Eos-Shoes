@@ -1,0 +1,39 @@
+.vaciarBoton {  
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cartFooterInfo, .cartFooterInfo p {
+  font-size: 0.8rem;
+  color: grey;  
+  margin-top: 0.5rem;
+}
+
+.totalCompra {
+  color: black !important;
+  font-size: 0.9rem !important;
+  font-weight: 600;
+}
+
+.cartBoton {
+  color: white; 
+  text-align: center;
+  font-size: 0.8rem;  
+  padding: 0.5rem;
+  margin-top: 1rem; 
+  background-color: #d51920;
+  cursor: pointer; 
+  transition: all 0.5s ease-in-out; 
+}
+
+.cartBoton:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.text-right {
+  text-align: right;
+}

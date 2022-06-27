@@ -1,0 +1,36 @@
+.cartItem {     
+    border: solid grey 1px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .cartImage {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .itemDetail {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    color: grey;
+  }
+
+  .itemColor {
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    border: none;   
+    margin-right: 0.5rem;
+  }
+
+  .itemInfo {
+    font-size: 0.8rem;
+    color: grey;
+  }
+
+  .botonEliminar {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+  }

@@ -1,0 +1,42 @@
+.homeImg {
+  background-color: black;
+  background-image: url(../../assets/Index02.png);
+  height: 100vh;
+  background-size: cover; 
+  background-position: bottom;    
+  z-index: 1;    
+}    
+
+.home {
+  height: 100vh;
+  z-index: 10; 
+  align-items: center !important;  
+  display:flex;   
+}
+
+.home img {  
+  align-self: center;  
+  /* width: calc (100% + 6rem); */
+  width: calc(100% + 6rem);
+  margin-left: -6rem;
+}
+
+@media (max-width: 992px) {
+  .home img {  
+    align-self: center;  
+    /* width: calc (100% + 6rem); */
+    width: 100%;
+    margin-left: 0;  
+  }
+
+  .home {
+    height: 100vh;
+    object-fit: contain !important;    
+    z-index: 10; 
+    position: fixed;
+    align-items: center !important;  
+    display:flex;       
+  }
+
+}
+  

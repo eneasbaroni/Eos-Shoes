@@ -1,0 +1,50 @@
+.counter {  
+  margin: 0 auto;   
+  padding: 0;
+  margin-bottom: 0;
+  border: solid black 1px;
+  justify-content: center;
+  align-items: center; 
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.countButton {  
+  display: inline-block;  
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 600;  
+  margin-bottom: 0;
+}
+
+.count { 
+  display: inline-block;   
+  text-align: center;
+  color: grey;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0;  
+}
+
+.agregarButton {  
+  text-align: center;      
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none; 
+  color: white;
+  background-color: #d51920;
+  font-size: 0.8rem;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;  
+  cursor: pointer;
+}
+
+.agregarButton:hover{      
+  transform: scale(1.03);
+}
+
+.sinStock {
+  font-weight: 400;  
+}

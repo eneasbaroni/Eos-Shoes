@@ -1,0 +1,21 @@
+.checkoutResumeContainer {   
+    height:12rem;
+}
+
+.checkoutBox {
+    border: solid grey 1px;
+    padding: 0.5rem;
+}
+
+.resumeTitle {
+  margin-top: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.buyInfo, .buyInfo p {
+  font-size: 0.8rem;
+  color: grey;  
+  margin-top: 0.5rem;
+}
+

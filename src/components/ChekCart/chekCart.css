@@ -1,0 +1,23 @@
+.itemCount {
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.checkButton {
+  text-align: center;      
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none; 
+  color: white;
+  background-color: #d51920;
+  font-size: 0.8rem;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;  
+  cursor: pointer;
+  width: 49% !important ;
+}
+
+.checkButton:hover{      
+  transform: scale(1.03);
+  color: white;
+}

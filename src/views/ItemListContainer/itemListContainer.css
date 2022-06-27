@@ -1,0 +1,77 @@
+/* filter Inicio */
+.filters {
+  display: flex;  
+  position: fixed;
+  height: 21px;
+  width: 100vh !important;
+  justify-content: flex-end ;
+  align-items: center ;  
+  transform: rotate(-90deg);  
+  left:calc(-50vh + (100vw / 12) + 10.5px)  ;
+  top: calc(50vh + 3rem);
+}
+
+.filter {  
+  padding-left: 1rem; 
+  padding-right: 1rem;     
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out; 
+  transition: all 0.4s ease-in-out; 
+}
+
+.filter:hover {
+  background-color: #d51920;
+  color: white !important;
+}
+/* filter Fin */
+
+
+#zapatillas {
+  min-height: 100vh;
+  align-items: flex-start;  
+}
+
+.itemListContainer { 
+  padding-top: 1rem; 
+}
+
+.itemListContainer h2 {  
+  font-weight: 200;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 992px) {
+
+  .filters {       
+    width: 100vw !important;  
+    transform: rotate(0);  
+    left: 0;
+    top: 4rem;  
+    padding-right: 5rem;  
+    background-color: white;
+    border-bottom: solid grey 1px;
+  }
+
+  .itemListContainer { 
+    padding-top: 6rem; 
+  }  
+
+}
+
+@media (max-width: 576px) {
+
+  #zapatillas {
+    padding-top: 2rem;  
+  }
+  
+  .filters {    
+    top: 6rem;  
+    justify-content: center !important;  
+    padding: 0;
+  }
+
+}
