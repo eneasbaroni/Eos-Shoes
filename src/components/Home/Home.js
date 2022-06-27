@@ -16,6 +16,7 @@ const Home = () => {
         ? <>
             <Loader/>
             <img src={otw} style={{display: "none"}} alt="preload" onLoad={handleLoad}/>
+            <div className="col-12 col-lg-7 homeImg" style={{display: "none"}}></div> 
           </>
         : <div className="container-fluid" id="index">
             <div className="row">
