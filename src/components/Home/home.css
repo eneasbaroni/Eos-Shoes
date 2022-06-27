@@ -1,6 +1,6 @@
 .homeImg {
   background-color: black;
-  background-image: url(../../assets/Index02.png);
+  /* background-image: url(../../assets/Index02.png); */
   height: 100vh;
   background-size: cover; 
   background-position: bottom;    
