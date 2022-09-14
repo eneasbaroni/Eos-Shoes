@@ -23,8 +23,9 @@ const ContactContainer = () => {
   })  
   
   // Expresiones regulares para los campos del formulario
-  const nombreRegex = /^[\s\S]{2,25}$/i
-  const apellidoRegex = /^[\s\S]{2,25}$/i // eslint-disable-next-line
+  // const nombreRegex = /^[\s\S]{2,25}$/i   
+  const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{2,25}$/i
+  const apellidoRegex = /^[a-zA-ZÀ-ÿ\s]{2,25}$/i // eslint-disable-next-line
   const telefonoRegex = /^[\+]?[0-9]{3,20}$/im // eslint-disable-next-line
   const emailRegex = /^[\w_\.-]+@[\w\.-]+\.[a-z\.]{2,6}$/i 
   const comentarioRegex = /^[\s\S]{1,300}$/i
@@ -65,7 +66,7 @@ const ContactContainer = () => {
             <Input placeholder="Telefono (sin guiones, sin 0 y sin 15)" name="telefono" foo={handleInputChange}/>
             <Input placeholder="E-mail" name="email" foo={handleInputChange}/>             
             <textarea required placeholder="Dejanos tu Comentario (máximo 300 caracteres)" className="userInput commnet py-3 ps-1 col-12 my-3" type="text" name="comentario" onChange={handleInputChange}></textarea>        
-            {nombreRegex.test(contact.name) && apellidoRegex.test(contact.apellido) && telefonoRegex.test(contact.telefono) && emailRegex.test(contact.email) && comentarioRegex.test(contact.comentario)
+            {nombreRegex.test(contact.nombre) && apellidoRegex.test(contact.apellido) && telefonoRegex.test(contact.telefono) && emailRegex.test(contact.email) && comentarioRegex.test(contact.comentario)
             ?<button className="col-12 enviarComentario" type="submit">Enviar Comentario</button>
             :<button className="col-12 enviarComentarioDisable" disabled type="submit">Enviar Comentario</button>}            
           </form>

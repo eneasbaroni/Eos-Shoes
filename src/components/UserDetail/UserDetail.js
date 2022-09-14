@@ -32,8 +32,8 @@ const UserDetail = () => {
   }))
 
   // Expresiones regulares para los campos del formulario
-  const nombreRegex = /^[\s\S]{2,25}$/i
-  const apellidoRegex = /^[\s\S]{2,25}$/i // eslint-disable-next-line
+  const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{2,25}$/i
+  const apellidoRegex = /^[a-zA-ZÀ-ÿ\s]{2,25}$/i // eslint-disable-next-line
   const telefonoRegex = /^[\+]?[0-9]{3,20}$/im // eslint-disable-next-line
   const emailRegex = /^[\w_\.-]+@[\w\.-]+\.[a-z\.]{2,6}$/i   
 

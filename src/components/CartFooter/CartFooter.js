@@ -13,7 +13,7 @@ export const CartFooter = () => {
         <div className="col-4 cartFooterInfo row">
             <p className="col-6">cantidad de items:</p>
             <p className="col-6 text-right">{cartQuantity}</p>
-            <p className="col-6">gasto de envio:</p>
+            <p className="col-6">gasto de envío:</p>
             <p className="col-6 text-right">¡envío gratis!</p>
             <p className="col-6 totalCompra">TOTAL:</p>
             <p className="col-6 text-right totalCompra">{`${Intl.NumberFormat("en-US", {style: "currency", currency: "USD", maximumFractionDigits: 2}).format(total)}`}</p>                           

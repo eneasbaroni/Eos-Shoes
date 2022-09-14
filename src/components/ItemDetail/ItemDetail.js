@@ -1,16 +1,22 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Talle from "../Talle/Talle"
 import ItemCount from "../ItemCount/ItemCount"
 import ChekCart from "../ChekCart/ChekCart"
 import CartContext from "../../context/cartContext"
 import "./itemDetail.css"
+import { useLocation } from "react-router-dom"
 
 const ItemDetail = ({product}) => {
   const {addProducts} = useContext (CartContext) 
   const [color, setColor] = useState(0) //useState que recibe el index del color seleccionado para poder controlar las imagenes a renderizar segun color
   const [imgGrande, setImgGrande] = useState(0)  //useState que recibe el index de la imgMini seleccionada para luego renderizarla en grande
   const [quantity, setQuantity] = useState(0)   //useState que recibe la cantidad agregada a carrito
-  const [talle, setTalle] = useState(product.colores[color].talles[0]) //useState que recibe el talle seleccionado para luego destacarlo  
+  const [talle, setTalle] = useState(product.colores[color].talles[0]) //useState que recibe el talle seleccionado para luego destacarlo
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);  
   
   const handleColor = (e) => {        
     setColor(e.target.id)

@@ -3,11 +3,17 @@ import news from "../../data/news";
 import Novedad from '../../components/Novedades/Novedad';
 import Loader from "../../components/Loader/Loader";
 import Footer from "../../components/Footer/Footer";
+import { useLocation } from 'react-router-dom';
 
 
 const NovedadesContainer = () => {
   const [novedadList, setNovedadList] = useState([])
   const [loading, setLoading] = useState(true);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const getNovedades = new Promise ((resolve, reject) => {
     setTimeout(() => {

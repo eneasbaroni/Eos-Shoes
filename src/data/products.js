@@ -149,7 +149,7 @@ export async function processOrder (orderProducts, orderData) {
 export async function createCommentary(commentary) {
 
   return (    
-    addDocument (commentary, "comments").then(function () {return (`<p>TU COMENTARIO A SIDO ENVIADO</p>`)}
+    addDocument (commentary, "comments").then(function () {return (`<p>TU COMENTARIO HA SIDO ENVIADO</p>`)}
     )
   )
   
