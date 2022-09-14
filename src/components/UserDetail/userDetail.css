@@ -53,11 +53,7 @@
 }
 
 .swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
-  background-color: #0f0f0f;
-}
-
-.swal2-container.swal2-backdrop-show {
-  background-color: #0f0f0f;
+  background-color: rgb(15, 15, 15) !important;
 }
 
 .userInfo, .userInfo p {
